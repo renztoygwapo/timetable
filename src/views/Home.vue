@@ -350,7 +350,6 @@ export default {
       })
       var clonedData = this.data
       if (finalObect.hasOwnProperty('classType')) {
-        console.log('we have class filter activated')
         _.forEach(this.classTypeSelected, (el) => {
           const data = _.filter(clonedData, { 'classType': el.code })
           _.forEach(data, (e) => newArr.push(e))
@@ -534,24 +533,6 @@ export default {
 .modal-body {
   text-align: left;
   font-size: 20px;
-}
-.name:after {
-    content: '\25B8';
-    font-size: 0.65em;
-    display: inline-block;
-    border-radius: 100rem;
-    width: 1.4em;
-    height: 1.4em;
-    background: #c8ad8c;
-    line-height: 1.4;
-    text-align: center;
-    margin-left: .85em;
-    position: relative;
-    -webkit-transition: all 200ms ease;
-    transition: all 200ms ease;
-    right: 0;
-    top: .25rem;
-    position: absolute;
 }
 
 .modal-wrapper {
